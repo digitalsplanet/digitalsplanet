@@ -313,9 +313,38 @@
             .entertainment-card button:hover {
               background-color: #059669; /* Darker green */
             }
+
+            /* Back Button */
+            .back-button {
+              position: fixed;
+              top: 1rem;
+              right: 1rem;
+              background-color: var(--primary-color);
+              color: #1f2937;
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              font-size: 1rem;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              transition: transform 0.2s ease, background-color 0.2s ease;
+            }
+
+            .back-button:hover {
+              background-color: #059669; /* Darker green */
+              transform: translateX(-5px); /* Move slightly left on hover */
+            }
+
+            .back-button::before {
+              content: "←"; /* Arrow icon */
+              font-size: 1.2rem;
+            }
           </style>
         </head>
         <body>
+          <button class="back-button" onclick="window.close()">Back</button>
           <section class="entertainment">
             <h2>Entertainment Subscriptions</h2>
             <div class="entertainment-cards">
@@ -334,7 +363,86 @@
                 <h3>Bostv</h3>
                 <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
               </div>
-              <!-- Add more subscription cards here -->
+              <div class="entertainment-card">
+                <img src="opplex-logo.png" alt="Opplex Logo" />
+                <h3>Opplex</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="geo-logo.png" alt="Geo Logo" />
+                <h3>Geo</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="cyber-logo.png" alt="Cyber Logo" />
+                <h3>Cyber</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="b1g-logo.png" alt="B1G Logo" />
+                <h3>B1G</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="starshare-logo.png" alt="Starshare Logo" />
+                <h3>Starshare</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="zain-logo.png" alt="Zain Logo" />
+                <h3>Zain</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="5g-live-logo.png" alt="5G Live Logo" />
+                <h3>5G Live</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="crystal-logo.png" alt="Crystal Logo" />
+                <h3>Crystal</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="mega-logo.png" alt="Mega Logo" />
+                <h3>Mega</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="sky-glass-logo.png" alt="Sky Glass Logo" />
+                <h3>Sky Glass</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="dino-logo.png" alt="Dino Logo" />
+                <h3>Dino</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="lion-ott-logo.png" alt="Lion OTT Logo" />
+                <h3>Lion OTT</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="max-ott-logo.png" alt="Max OTT Logo" />
+                <h3>Max OTT</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="strong-4k-logo.png" alt="Strong 4K Logo" />
+                <h3>Strong 4K</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="trex-logo.png" alt="Trex Logo" />
+                <h3>Trex</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
+              <div class="entertainment-card">
+                <img src="4kott-logo.png" alt="4K OTT Logo" />
+                <h3>4K OTT</h3>
+                <button onclick="window.location.href='https://wa.me/923251608082'">Get Subscription</button>
+              </div>
             </div>
           </section>
         </body>
