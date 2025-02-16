@@ -90,10 +90,12 @@
       border-radius: 0.5rem;
       font-size: 1rem;
       cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
     }
 
     .hero button:hover {
       background-color: #059669; /* Darker green */
+      transform: scale(1.05); /* Slightly enlarge on hover */
     }
 
     /* Services Section */
@@ -127,6 +129,10 @@
     .service-card:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px var(--primary-color);
+    }
+
+    .service-card:active {
+      transform: scale(0.95); /* Slightly shrink on click */
     }
 
     .service-card h3 {
@@ -281,11 +287,16 @@
               border-radius: 1rem;
               text-align: center;
               transition: transform 0.2s, box-shadow 0.2s;
+              cursor: pointer;
             }
 
             .entertainment-card:hover {
               transform: scale(1.05);
               box-shadow: 0 0 15px var(--primary-color);
+            }
+
+            .entertainment-card:active {
+              transform: scale(0.95); /* Slightly shrink on click */
             }
 
             .entertainment-card img {
@@ -308,17 +319,19 @@
               border-radius: 0.5rem;
               font-size: 1rem;
               cursor: pointer;
+              transition: transform 0.2s ease, background-color 0.2s ease;
             }
 
             .entertainment-card button:hover {
               background-color: #059669; /* Darker green */
+              transform: scale(1.05); /* Slightly enlarge on hover */
             }
 
             /* Back Button */
             .back-button {
               position: fixed;
               top: 1rem;
-              right: 1rem;
+              left: 1rem; /* Changed from right to left */
               background-color: var(--primary-color);
               color: #1f2937;
               padding: 0.5rem 1rem;
